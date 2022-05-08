@@ -1,0 +1,988 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" sizes="16x48" href="assets/img/logo-woc.png">
+    <title>WoC 2022 | MNNIT</title>
+    <meta name="author" content="milan & jugta ram" >
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
+    <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href="assets/fonts/line-icons.css">
+    <!-- Nivo Lightbox -->
+    <link rel="stylesheet" type="text/css" href="assets/css/nivo-lightbox.css" >
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LRL6356VD9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LRL6356VD9');
+</script>
+
+  </head>
+  <body>
+    <canvas id="canvas-id" style="width: 100vw; height:100vh"></canvas>
+
+    <!-- Header Area wrapper Starts -->
+    <header id="header-wrap">
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-lg bg-inverse fixed-top scrolling-navbar">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <a href="index.html" class="navbar-brand"><img src="assets/img/logo-woc.png" id="woc-logo" alt="" style="height:70px; width:auto; "></a>       
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="lni-menu"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end">
+              <li class="nav-item active">
+                <a class="nav-link" href="#header-wrap">
+                  Home
+                </a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" target="_blank"href="https://docs.google.com/forms/d/e/1FAIpQLSdocwsAP62hViX06jp4HMXlyr0FxfdbLU7uRCwtYR0qOnjLog/viewform">
+                  Register Now
+                </a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#about">
+                  About
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#schedules">
+                  Schedule
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sponsors">
+                  Sponsors
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-text">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+
+      <!-- Hero Area Start -->
+      <div id="hero-area">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-9 col-sm-12">
+              <div class="contents text-center">
+                <div class="icon">
+                  <i class="lni-code"></i>
+                </div>
+                <p class="banner-info">May 16th,2022 - May 23rd,2022</p> 
+                <h2 class="head-title">Weekend of Code </h2>
+                <h4 class="banner-desc">DevJam + CodeStart</h4>
+                <p id="replaceStrings" style="color:white;font-size: 18px"></p>
+                <br>
+                <br>
+                <div class="banner-btn">
+                  <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-common">
+                  Register Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Hero Area End -->
+    </header>
+    <!-- Header Area wrapper End -->
+
+    <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content" id="registrationModel">
+        <div class="modal-header" style="background: linear-gradient(65deg, #1a027f 0, #00b09b 100%);">
+          <h2 class="modal-title text-light">Weekend of Code 2k22 Registration</h2>
+          <button type="button" class="close btn-outline-danger" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <h4>Rules and Regulations</h4>
+          <br>
+          <ul class="stylish-list">
+            <li><i class="lni-check-mark-circle"></i> Two events - 𝗗𝗲𝘃𝗝𝗮𝗺 and 𝗖𝗼𝗱𝗲𝗦𝘁𝗮𝗿𝘁 - will be conducted under 𝗪𝗲𝗲𝗸𝗲𝗻𝗱 𝗢𝗳 𝗖𝗼𝗱𝗲 𝟮𝗸𝟮𝟮.</li>
+            <li><i class="lni-check-mark-circle"></i> It is upto you whether you want to register in both the events or any single event.</li>
+            <li><i class="lni-check-mark-circle"></i> No two teams should have same members.</li>
+            <li><i class="lni-check-mark-circle"></i> Inter-branch (𝗕.𝗧𝗲𝗰𝗵) teams are 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.</li>
+            <li><i class="lni-check-mark-circle"></i> All the members of team must be from 𝘀𝗮𝗺𝗲 𝘆𝗲𝗮𝗿.</li>
+            <li><i class="lni-check-mark-circle"></i> All the members of team must be from 𝘀𝗮𝗺𝗲 𝗰𝗼𝘂𝗿𝘀𝗲 (either 𝗕.𝗧𝗲𝗰𝗵 or 𝗠𝗖𝗔).</li>
+            <li><i class="lni-check-mark-circle"></i> You can create different teams for both the events.</li>
+            <li><i class="lni-check-mark-circle"></i> 𝗗𝗲𝗮𝗱𝗹𝗶𝗻𝗲 for registration is - 𝟭𝟰𝘁𝗵 𝗠𝗮𝘆 𝟮𝟬𝟮𝟮 𝟭𝟭:𝟱𝟵𝗣𝗠.</li>
+            <li><i class="lni-check-mark-circle"></i> 𝗪𝗲𝗲𝗸𝗲𝗻𝗱 𝗢𝗳 𝗖𝗼𝗱𝗲 𝟮𝗸𝟮𝟮 is scheduled from 𝟮𝟬𝘁𝗵 𝗠𝗮𝘆 - 𝟮𝟲𝘁𝗵 𝗠𝗮𝘆 𝟮𝟬𝟮𝟮.</li>
+            <li><i class="lni-check-mark-circle"></i> Click on the following buttons to proceed with your registration.</li>
+          </ul>
+          <br>
+          <div class="text-center">
+            <a class="btn btn-info" href="https://forms.gle/i66vpZDP6VgXSZS67" target="_blank">DevJam</a>
+            <a class="btn btn-danger" href="https://forms.gle/e17cv1ctA7YN91tcA" target="_blank">CodeStart</a>
+          </div>
+        </div>
+        <div class="modal-footer" style="background: linear-gradient(65deg, #1a027f 0, #00b09b 100%);">
+          <button type="button" class="btn btn-outline-warning" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- Model Content end -->
+
+    <!-- Count Bar Start -->
+    <section id="count">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-10">
+            <div class="count-wrapper text-center">
+              <div class="time-countdown wow fadeInUp" data-wow-delay="0.2s">
+                <div id="clock" class="time-count"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Count Bar End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-xs-12">
+            <div class="img-thumb">
+              <img class="img-fluid" src="assets/img/about/img1.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-xs-12">
+            <div class="about-content">
+              <div>
+                <div class="about-text">  
+                  <h2>About the Event</h2>
+                  <p>𝗪𝗲𝗲𝗸𝗲𝗻𝗱 𝗢𝗳 𝗖𝗼𝗱𝗲, the annual technical event of MNNIT, Allahabad is up with its 2k22 edition! The enthralling week long
+                  event consists of 𝗗𝗲𝘃𝗝𝗮𝗺 and 𝗖𝗼𝗱𝗲𝗦𝘁𝗮𝗿𝘁. 𝗗𝗲𝘃𝗝𝗮𝗺 aims at providing a glimpse of the world of development to our freshmen
+                  while 𝗖𝗼𝗱𝗲𝗦𝘁𝗮𝗿𝘁 is a coding event for our freshmen and sophomores. The sole purpose of this event is to provide
+                  participants with hands-on experience and exposure along with proper guidance. Get ready for an adventurous journey of
+                  learning, innovating and exploring new technologies.</p>
+                </div>
+                <ul class="stylish-list mb-3">
+                  <li><i class="lni-check-mark-circle"></i>Week dedicated to coding and development</li>
+                  <li><i class="lni-check-mark-circle"></i>Meet Developers and Coders from your batch</li>
+                  <li><i class="lni-check-mark-circle"></i>Get Inspired by Amazing Mentors</li>
+                  <li><i class="lni-check-mark-circle"></i>Make project in any language you want</li>
+                  <li><i class="lni-check-mark-circle"></i>Test your coding skills with 5 hour insomaniac event 𝗖𝗼𝗱𝗲𝗦𝘁𝗮𝗿𝘁</li>
+                  <li><i class="lni-check-mark-circle"></i>Completely Remote Edition</li>
+                </ul>
+                <!-- <a class="btn btn-common" href="#">Learn More</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Video Section Start -->
+    <!-- <div class="ready-to-play">
+      <video id="bgvid" class="stop" loop>
+        <source src="assets/video/event.webm" type="video/mp4">
+      </video>
+      <div id="polina" class="video-text">
+        <div class="tb-t">
+            <div class="tb-c">
+              <div class="polina"><button><i class='lni-play'></i></button></div>
+            </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- Video Section End -->
+
+    <!-- Information Bar Start -->
+    <section id="information-bar">
+      <div class="container">
+        <div class="row inforation-wrapper">
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <ul>
+              <li></li>
+              <li>
+                <i class="lni-map-marker"></i>
+              </li>
+              <li><span><b>Location</b> Your home</span></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <ul>
+              <li>
+                <i class="lni-calendar"></i>
+              </li>
+              <li><span><b>Event duration</b> May 20th,2022 - May 26rd,2022</span></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <ul>
+              <li>
+                <i class="lni-mic"></i>
+              </li>
+              <li><span><b>Mentors</b>30+ Mentors</span></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <ul>
+              <li>
+                <i class="lni-user"></i>
+              </li>
+              <li><span><b>Developers</b>The more the merrier :) </span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Information Bar End -->
+
+
+
+
+<!-- Speakers section Starts -->
+<section id="intro" class="intro section-padding">
+  <div class="container">
+    <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">Past Speakers</h1>
+    <div class="row speaker-woc">
+      <div class="col-md-4">
+        <div class="profile-card-2"><img src="assets/img/speakers/Abhey_rana.jpeg" class="img img-responsive" style="max-height: 500px;">
+            <div class="profile-name">ABHEY RANA</div>
+            <!-- <div class="profile-username">@johndoesurname</div> -->
+            <div class="profile-icons">
+              <a href="https://www.facebook.com/Abhey.Rana.Useless"><i class="fa fa-facebook"></i></a>
+              <a href="https://github.com/Abhey"><i class="fa fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/abhey-rana/"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Speaker section ends -->
+
+
+
+
+
+
+
+     <!-- intro Section Start -->
+    <section id="intro" class="intro section-padding">
+      <div class="container">
+        <div class="row" style="color: rgba(255, 255, 255, 1);">
+          <div class="col-12" style="background-color: rgba(255, 255, 255, 0.1);">
+            <div class="section-title-header text-center">
+              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">Why should you join?</h1>
+              <p class="wow fadeInDown" data-wow-delay="0.2s">Participating in WoC will go a long way towards developing your technical skills. This event will be a great opportunity
+              for freshmen to get started with developing and coding. You don’t need any prior knowledge to participate in this event
+              (except zeal for learning!!) because your mentor will guide you through every step. At the end of this event you will
+              have a great project. Coding and developing skills will also help you in getting an internship and placement. Don’t miss
+              out this opportunity and discover the fun in coding and developing.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row intro-wrapper">
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="single-intro-text mb-70">
+              <i class="lni-website"></i>
+               <h3>Introduction to Open Source</h3>
+               <p>
+                  Get yourself introduced to Open Source Communities and be a part of them. Feel proud to be a member of communities
+                  like GitHub, Python Software Foundation, etc.
+               </p>
+               <span class="count-number">01</span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="single-intro-text">
+              <i class="lni-code"></i>
+               <h3 class="ts-title">Intro to Competitive Programming</h3>
+               <p>
+                  Get yourself introduced to Competitive Programming.<br>Sharpen your competitive programming skills by competing against brightest minds of college
+               </p>
+               <span class="count-number">02</span>
+            </div>
+            <div class="border-shap left"></div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="single-intro-text mb-70">
+              <i class="lni-layers"></i>
+               <h3>Exciting projects on your Resume</h3>
+               <p>
+                Enhance your Resume with exciting projects developed under the guidance of the Mentors, having
+                expertise in their respective fields of development.
+               </p>
+               <span class="count-number">03</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- intro Section End -->
+  
+    <!-- Counter Area Start-->
+    <section class="counter-section section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title-header text-center">
+              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s" >Past Statistics</h1>
+            </div>
+          </div>
+        </div>
+        <br><br>
+        <div class="row">
+          <!-- Counter Item -->
+          <div class="col-lg-3 col-md-6 col-xs-12 work-counter-widget">
+            <div class="counter">
+              <div class="icon">
+                <i class="lni-mic"></i>
+              </div>
+              <div class="counter-content">
+                <div class="counterUp">20</div>
+                <p>Mentors</p>
+              </div>
+            </div>
+          </div>
+          <!-- Counter Item -->
+          <div class="col-lg-3 col-md-6 col-xs-12 work-counter-widget">
+            <div class="counter">
+              <div class="icon">
+                <i class="lni-bulb"></i>
+              </div>
+              <div class="counter-content">
+                <div class="counterUp">250</div>
+                <p>Developers</p>
+              </div>
+            </div>
+          </div>
+          <!-- Counter Item -->
+          <div class="col-lg-3 col-md-6 col-xs-12 work-counter-widget">
+            <div class="counter">
+              <div class="icon">
+                <i class="lni-briefcase"></i>
+              </div>
+              <div class="counter-content">
+                <div class="counterUp">60</div>
+                <p>Projects</p>
+              </div>
+            </div>
+          </div>
+          <!-- Counter Item -->
+          <div class="col-lg-3 col-md-6 col-xs-12 work-counter-widget">
+            <div class="counter">
+              <div class="icon">
+                <i class="lni-coffee-cup"></i>
+              </div>
+              <div class="counter-content">
+                <div class="counterUp">80</div>
+                <p>Teams</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Counter Area End-->
+
+    <!-- Schedule Section Start -->
+    <section id="schedules" class="schedule section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title-header text-center">
+              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">Event Schedules</h1>
+              <p class="wow fadeInDown" data-wow-delay="0.2s">Duration of 𝗪𝗲𝗲𝗸𝗲𝗻𝗱 𝗢𝗳 𝗖𝗼𝗱𝗲 𝟮𝗸𝟮𝟮 is 𝟭 𝘄𝗲𝗲𝗸.</p>
+              <p> 𝗗𝗲𝘃𝗝𝗮𝗺 is a 𝘄𝗲𝗲𝗸 long event || 𝗖𝗼𝗱𝗲𝗦𝘁𝗮𝗿𝘁 is a 𝟱 𝗵𝗼𝘂𝗿𝘀 long event </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 mb-5 text-center">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="monday-tab" data-toggle="tab" href="#monday" role="tab" aria-controls="monday" aria-expanded="true">
+                  <div class="item-text">
+                    <h4>Inaugration</h4>
+                    <h5>20 May 2022</h5>
+                  </div>
+                </a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" id="tuesday-tab" data-toggle="tab" href="#tuesday" role="tab" aria-controls="tuesday">
+                  <div class="item-text">
+                    <h4>Abstract Submission</h4>
+                    <h5>21 May 2022</h5>
+                  </div>
+                </a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" id="friday-tab" data-toggle="tab" href="#wednesday" role="tab" aria-controls="friday">
+                  <div class="item-text">
+                    <h4>Day 00</h4>
+                    <h5>20 May 2022</h5>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="friday-tab" data-toggle="tab" href="#thursday" role="tab" aria-controls="friday">
+                  <div class="item-text">
+                    <h4>Day 03</h4>
+                    <h5>23 May 2022</h5>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="wednesday-tab" data-toggle="tab" href="#friday" role="tab" aria-controls="wednesday">
+                  <div class="item-text">
+                    <h4>Day 06</h4>
+                    <h5>26 May 2022</h5>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="thursday-tab" data-toggle="tab" href="#saturday" role="tab" aria-controls="thursday">
+                  <div class="item-text">
+                    <h4>Day 07</h4>
+                    <h5>27 May 2022</h5>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="codestart-tab" data-toggle="tab" href="#codestart" role="tab" aria-controls="codestart">
+                  <div class="item-text">
+                    <h4>CodeStart</h4>
+                    <h5>28 May 2022</h5>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12">
+            <div class="schedule-area row wow fadeInDown" data-wow-delay="0.3s">
+              <div class="schedule-tab-content col-12 clearfix">
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="monday" role="tabpanel" aria-labelledby="monday-tab">
+                    <div id="accordion">
+                      <div class="card">
+                        <div id="headingOne">
+                          <div class="schedule-slot-time">
+                            <!-- <span> 08:00 - 20:00</span> -->
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <!-- <div class="images-box"> -->
+                              <!-- <img class="img-fluid" src="assets/img/speaker/speakers-1.jpg" alt=""> -->
+                            <!-- </div>                      -->
+                            <h4>𝗜𝗻𝗮𝘂𝗴𝘂𝗿𝗮𝘁𝗶𝗼𝗻 𝗮𝗻𝗱 𝗔𝗯𝘀𝘁𝗿𝗮𝗰𝘁 𝗦𝘂𝗯𝗺𝗶𝘀𝘀𝗶𝗼𝗻</h4>
+                            <!-- <h5 class="name">David Warner</h5> -->
+                          </div>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                          <div class="card-body">
+                            <p>Tech Talks | Mentor Allotment | The submission  of Abstract by the teams (Deadline: 20𝘁𝗵 𝗠𝗮𝘆 𝟮𝗽𝗺).</p>
+                            <div class="location">
+                              <!-- <span> <i class="lni-map-marker"></i> Location:</span> Tentative -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="tuesday" role="tabpanel" aria-labelledby="tuesday-tab">
+                    <div id="accordion2">
+
+
+                      <!-- <div class="card">
+                        <div id="headingOne1">
+                          <div class="schedule-slot-time">
+                            <span> 08:00 - 14:00 </span>
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="false" aria-controls="collapseOne1"> 
+                            <h4>Abstract Submission</h4> 
+                          </div>
+                        </div>
+                        <div id="collapseOne1" class="collapse show" aria-labelledby="headingOne1" data-parent="#accordion2">
+                          <div class="card-body">
+                            <p>The submission  of Abstract by the teams.</p>
+                            <div class="location">
+                              <span><i class="lni-map-marker"></i> Location:</span> Tentative
+                            </div>
+                          </div>
+                        </div>
+                      </div> -->
+
+
+                      <!-- <div class="card">
+                        <div id="headingTwo2">
+                          <div class="schedule-slot-time">
+                            <span> 15:00 - 19:00 </span>
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+                            <h4>Codestart 3.0</h4>
+                          </div>
+                        </div>
+                        <div id="collapseTwo2" class="collapse" aria-labelledby="headingTwo2" data-parent="#accordion2">
+                          <div class="card-body">
+                            <p>Finally the codestart is here. The coding event and one of the main attraction of Weekend of Code</p>
+                            <div class="location">
+                              <span><i class="lni-map-marker"></i> Location:</span> Computer Center
+                            </div>
+                          </div>
+                        </div> 
+                      </div>-->
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="friday" role="tabpanel" aria-labelledby="friday-tab" >
+                    <div id="accordion">
+                      <div class="card">
+                        <div id="headingFive" >
+                          <div class="schedule-slot-time">
+                            <!-- <span> 08:00 - 20:00</span> -->
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            <!-- <div class="images-box"> -->
+                              <!-- <img class="img-fluid" src="assets/img/speaker/speakers-1.jpg" alt=""> -->
+                            <!-- </div>                      -->
+                            <h4>𝗙𝗶𝗻𝗮𝗹 𝗱𝗮𝘆 𝘁𝗼 𝘀𝘂𝗯𝗺𝗶𝘁 𝗗𝗲𝘃𝗝𝗮𝗺 𝗽𝗿𝗼𝗷𝗲𝗰𝘁</h4>  
+                            <!-- <h5 class="name">David Warner</h5> -->
+                          </div>
+                        </div>
+                        <div id="collapseFive" class="collapse show" aria-labelledby="headingFive" data-parent="#accordion">
+                          <div class="card-body">
+                            <p>Finally it's the day to submit all 𝗗𝗲𝘃𝗝𝗮𝗺 Projects for Final Evaluation. Deadline is 𝟮𝟮𝗻𝗱 𝗠𝗮𝘆 𝟭𝟬 𝗽𝗺.</p>
+                            <!-- <div class="location"> -->
+                              <!-- <span> <i class="lni-map-marker"></i> Location:</span> Tentative -->
+                            <!-- </div> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="wednesday" role="tabpanel" aria-labelledby="wednesday-tab">
+                    <div id="accordion3">
+                      <div class="card">
+                        <div id="headingOne3">
+                          <div class="schedule-slot-time">
+                            <!-- <span> 08:00 - 16:00 </span> -->
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseOne3" aria-expanded="false" aria-controls="collapseOne3">
+                            <h4>𝗗𝗲𝘃𝗝𝗮𝗺 𝗪𝗲𝗲𝗸 𝗦𝘁𝗮𝗿𝘁𝘀</h4>
+                          </div>
+                        </div>
+                        <div id="collapseOne3" class="collapse show" aria-labelledby="headingOne3" data-parent="#accordion3">
+                          <div class="card-body">
+                            <p>Finally the 𝗗𝗲𝘃𝗝𝗮𝗺 week starts.</p>
+                            <!-- <div class="location"> -->
+                              <!-- <span><i class="lni-map-marker"></i> Location:</span> Tentative -->
+                            <!-- </div> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="thursday" role="tabpanel" aria-labelledby="thursday-tab">
+                    <div id="accordion4">
+                      <div class="card">
+                        <div id="headingOne">
+                          <div class="schedule-slot-time">
+                            <!-- <span> 18:00 - 18:30 </span> -->
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseOne4" aria-expanded="false" aria-controls="collapseOne4">
+                            <h4>𝗠𝗶𝗱 𝗧𝗲𝗿𝗺 𝗘𝘃𝗮𝗹𝘂𝗮𝘁𝗶𝗼𝗻</h4>
+                          </div>
+                        </div>
+                        <div id="collapseOne4" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion4">
+                          <div class="card-body">
+                            <p>The midterm evaluation of 𝗗𝗲𝘃𝗝𝗮𝗺 projects by the respective mentors of each team.</p>
+                            <!-- <div class="location"> -->
+                              <!-- <span><i class="lni-map-marker"></i> Location:</span> Weekend of Code fb page -->
+                            <!-- </div> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="saturday" role="tabpanel" aria-labelledby="saturday-tab">
+                    <div id="accordion5">
+                      <div class="card">
+                        <div id="headingOne">
+                          <div class="schedule-slot-time">
+                            <!-- <span> 18:00 - 18:30 </span> -->
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseOne5" aria-expanded="false" aria-controls="collapseOne4">
+                            <h4>𝗙𝗶𝗻𝗮𝗹 𝗘𝘃𝗮𝗹𝘂𝗮𝘁𝗶𝗼𝗻 𝗙𝗼𝗿 𝗗𝗲𝘃𝗝𝗮𝗺.</h4>
+                          </div>
+                        </div>
+                        <div id="collapseOne5" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion5">
+                          <div class="card-body">
+                            <p>Judges will start evaluating the projects.</p>
+                            <!-- <div class="location"> -->
+                              <!-- <span><i class="lni-map-marker"></i> Location:</span> Weekend of Code fb page -->
+                            <!-- </div> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="codestart" role="tabpanel" aria-labelledby="codestart-tab">
+                    <div id="accordion5">
+                      <div class="card">
+                        <div id="headingOne">
+                          <div class="schedule-slot-time">
+                            <!-- <span> 18:00 - 18:30 </span> -->
+                          </div>
+                          <div class="collapsed card-header" data-toggle="collapse" data-target="#collapseOne5" aria-expanded="false" aria-controls="collapseOne4">
+                            <h4>𝗖𝗼𝗱𝗲𝗦𝘁𝗮𝗿𝘁𝟰.𝟬</h4>
+                          </div>
+                        </div>
+                        <div id="collapseOne5" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion5">
+                          <div class="card-body">
+                            <p>Finally, 𝗖𝗼𝗱𝗲𝗦𝘁𝗮𝗿𝘁 is here. It will be conducted from 𝟴𝗽𝗺 𝘁𝗼 𝟭𝗮𝗺 on 𝟮𝟵𝘁𝗵 𝗠𝗮𝘆 𝟮𝟬𝟮𝟭.</p>
+                            <!-- <div class="location"> -->
+                              <!-- <span><i class="lni-map-marker"></i> Location:</span> Weekend of Code fb page -->
+                            <!-- </div> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section id="sponsors" class="section-padding">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title-header text-center">
+              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Sponsors</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-30 text-center wow fadeInDown" data-wow-delay="0.3s">
+          <div class="col-lg-12">
+            <div class="sponsors-logo text-center">
+              <a href="https://www.hackerearth.com/" target="_blank"><img src="assets/img/sponsors/he-logo.png" alt="" style="height:20%; width:80%;"></a>
+            </div>
+          </div> 
+        </div>
+      </div>
+      </div>
+    </section> -->
+    <!-- Sponsors Section End -->
+
+    <!-- Sponsors Section Start -->
+    <section id="sponsors" class="section-padding">
+      <!-- <div class="overlay"></div> -->
+      <div class="container">
+        <!-- <div class="row">
+          <div class="col-12">
+            <div class="section-title-header text-center">
+              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">Sponsors</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-30 text-center wow fadeInDown" data-wow-delay="0.3s">
+        	<div class="col-lg-12">
+	            <div class="text-center">
+	              <a href="https://caarya.in/" target="_blank" class="d-flex justify-content-center align-items-center">
+                  <img class="p-2" src="assets/img/sponsors/caarya-logo.png" alt="caarya-logo" style="max-width:clamp(15%, 100px, 20%);">
+                  <h1 id="caarya" class="wow fadeInUp p-2" data-wow-delay="0.2s">caarya</h1>
+                </a>
+	            </div>
+	            <div class="text-center">
+            </div>
+	      	</div>
+        </div> -->
+
+<!--         <div class="row">
+          <div class="col-12">
+            <div class="text-center">
+              <h5 class="wow fadeInUp" data-wow-delay="0.2s" style="font-weight: 600;color: rgb(208, 76, 76);font: poppins;">Caarya</h5>
+            </div>
+          </div>
+        </div> -->
+
+
+        <br>
+
+
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title-header text-center">
+              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">Past Sponsors</h1>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row mb-30 text-center wow fadeInDown" data-wow-delay="0.3s">
+
+          <div class="col-lg-6">
+            <div class="sponsors-logo text-center">
+              <a href="https://caarya.in/" target="_blank" class="d-flex justify-content-center align-items-center">
+                <img class="m-1 p-2" src="assets/img/sponsors/caarya-logo.png" alt="caarya-logo" style="height:20%; width:80%;">
+                <h1 id="caarya" class="wow fadeInUp p-2" data-wow-delay="0.2s">caarya</h1>
+              </a>
+            </div>
+      	</div>
+
+    	<div class="col-lg-6">
+            <div class="sponsors-logo text-center">
+              <a href="https://www.scaler.com/" target="_blank"><img src="assets/img/sponsors/si-logo.png" alt="" style="height:20%; width:80%;"></a>
+            </div>
+      	</div>
+          <div class="col-lg-6">
+            <div class="sponsors-logo text-center">
+              <a href="https://codingblocks.com/" target="_blank"><img src="assets/img/sponsors/cb-logo.png" alt="" style="height:20%; width:60%;"></a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="sponsors-logo text-center">
+              <a href="https://www.hackerearth.com/" target="_blank"><img src="assets/img/sponsors/he-logo.png" alt="" style="height:20%; width:80%;"></a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="sponsors-logo text-center">
+              <a href="https://www.stickermule.com/en-in" target="_blank"><img src="assets/img/sponsors/sm-logo.png" alt="" style="height:20%; width:80%;"></a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="sponsors-logo text-center">
+              <a href="https://www.stickeryou.com/" target="_blank"><img src="assets/img/sponsors/sy-logo.png" alt="" style="height:50%; width:40%;"></a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="sponsors-logo text-center">
+              <a href="https://www.infotechhub.in/" target="_blank"><img src="assets/img/sponsors/ith-logo.png" alt="" style="height:30%; width:80%;"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+    </section>
+    <!-- Sponsors Section End -->
+
+    <!-- Contact Us Section -->
+   <!--  <section id="contact-map" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title-header text-center">
+              <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Contact Us</h2>
+              <p class="wow fadeInDown" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem an <br> cule dicta iriure at phaedrum.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-12 col-xs-12">
+            <div class="container-form wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="form-wrapper">
+                <form role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+                  <div class="row">
+                    <div class="col-md-6 form-line">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="name" name="email" placeholder="First Name" required data-error="Please enter your name">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 form-line">
+                      <div class="form-group">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required data-error="Please enter your Email">
+                        <div class="help-block with-errors"></div>
+                      </div> 
+                    </div>
+                    <div class="col-md-12 form-line">
+                      <div class="form-group">
+                        <input type="tel" class="form-control" id="msg_subject" name="subject" placeholder="Subject" required data-error="Please enter your message subject">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <textarea class="form-control" rows="4" id="message" name="message" required data-error="Write your message"></textarea>
+                      </div>
+                      <div class="form-submit">
+                        <button type="submit" class="btn btn-common" id="form-submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
+                        <div id="msgSubmit" class="h3 text-center hidden"></div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- Contact Us Section End -->
+
+    <!-- Map Section Start -->
+    <!-- <section id="google-map-area">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <object style="border:0; height: 450px; width: 100%;" data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1866.2316619862218!2d81.86306378961766!3d25.491184015483924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399aca78818ddc51%3A0x6690dd2de3a1415b!2sMotilal+Nehru+National+Institute+of+Technology%2C+Allahabad!5e0!3m2!1sen!2sin!4v1551331918462"></object>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- Map Section End -->
+
+    <!-- Contact text Start -->
+    <section id="contact-text">
+      <div class="container">
+        <div class="row contact-wrapper">
+          <!-- 
+          <div class="col-lg-4 col-md-5 col-xs-12"> 
+            <ul>  
+              <li>  
+                <i class="lni-home"></i>  
+              </li> 
+              <li><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdocwsAP62hViX06jp4HMXlyr0FxfdbLU7uRCwtYR0qOnjLog/viewform"><span>Register Now</span></a></li>  
+            </ul> 
+          </div>  --> 
+
+          <div class="col-12">
+            <div class="section-title-header text-center">
+              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s"><font style="color:white">Contact</font></h1>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-3 col-xs-12">
+            <ul>
+              <li></li> 
+            </ul> 
+          </div>
+          <div class="col-lg-4 col-md-3 col-xs-12"> 
+            <ul>  
+              <li>  
+                <i class="lni-envelope"></i>  
+              </li> 
+              <li><span>weekend.of.code@gmail.com</span></li> 
+            </ul> 
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- Contact text End -->
+
+    <footer>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-12 col-xs-12">
+            <br>
+            <br>
+            <br>
+            <div class="social-icons-footer">
+              <ul>
+                <li class="github"><a target="_blank" href="https://www.facebook.com/wocmnnit/"><i class="lni-facebook-filled"></i></a></li>
+                <!-- <li class="twitter"><a target="_blank" href="3"><i class="lni-twitter-filled"></i></a></li> -->
+                <li class="github"><a target="_blank" href="https://cc-mnnit.github.io/DevJam/"> <i class="lni-github-original"></i></a></li>
+              </ul>
+            </div>
+            <div class="site-info">
+              <p><i class="lni-code size-xs" style="size:18px"></i> &nbsp; with &nbsp; <i style="color: red;" class="lni-heart-filled size-xs"></i> &nbsp; by WebTeam, WoC</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Go to Top Link -->
+    <a href="#" class="back-to-top">
+      <i class="lni-chevron-up"></i>
+    </a>
+
+    <div id="preloader">
+      <div class="sk-circle">
+        <div class="sk-circle1 sk-child"></div>
+        <div class="sk-circle2 sk-child"></div>
+        <div class="sk-circle3 sk-child"></div>
+        <div class="sk-circle4 sk-child"></div>
+        <div class="sk-circle5 sk-child"></div>
+        <div class="sk-circle6 sk-child"></div>
+        <div class="sk-circle7 sk-child"></div>
+        <div class="sk-circle8 sk-child"></div>
+        <div class="sk-circle9 sk-child"></div>
+        <div class="sk-circle10 sk-child"></div>
+        <div class="sk-circle11 sk-child"></div>
+        <div class="sk-circle12 sk-child"></div>
+      </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/jquery.nav.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/nivo-lightbox.js"></script>
+    <!-- <script src="assets/js/video.js"></script> -->
+    <script src="assets/js/main.js"></script>
+    <!-- <script src="assets/js/canvas.js"></script>       -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.22/dist/vanta.trunk.min.js"></script>
+<script defer="true">
+VANTA.TRUNK({
+  el: "#canvas-id",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00
+})
+</script> -->
+    <!-- typing animations -->
+    <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+    <script src="./assets/js/typing_animation.js"></script>
+
+  </body>
+</html>
